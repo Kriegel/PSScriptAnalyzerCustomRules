@@ -48,7 +48,7 @@ CLRVersion = '4.0'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-# RequiredModules = @()
+RequiredModules = @('PSScriptAnalyzer')
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()

@@ -12,7 +12,9 @@ Function Write-Debug {
 
 # Create Code to Parse
 New-Alias -Name WrtH -Value write-host -Force
-$code = "WrtH (Get-Content 'C:\temp\message.txt') -nonew -fore 'yellow' 123 -ea Continue 'wer','was','wann' -notExist 'foo'"
+#$code = "WrtH (Get-Content 'C:\temp\message.txt') -nonew -fore 'yellow' 123 -ea Continue 'wer','was','wann' -notExist 'foo'"
+
+$code = 'NotExist.ext -Parm "Arg"'
 
 # create AST from code
 $ScriptBlockAst = [System.Management.Automation.Language.Parser]::ParseInput($Code,[ref]$null,[ref]$Null)
